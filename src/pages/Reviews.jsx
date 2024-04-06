@@ -250,7 +250,7 @@ const Reviews = () => {
           ))}
         </div>
         {/* images */}
-        <div className="mx-5  md:mx-0 mb-5 md:mb-0">
+        <div className="mx-5  md:mx-0 mb-5 md:mb-0 ">
           <img src={reviewImage} alt="" />
         </div>
       </div>
