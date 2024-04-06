@@ -35,7 +35,7 @@ const Modal = ({ isOpen, onClose, onSubmit }) => {
   return (
     <div className={`fixed inset-0 bg-[#1D3045]/95 ${isOpen ? "" : "hidden"}`}>
       <div className="flex items-center justify-center min-w-3xl min-h-screen">
-        <div className="bg-white p-8 rounded shadow-lg w-full max-w-3xl">
+        <div className="bg-white p-8 rounded shadow-lg w-full max-w-3xl mx-3 md:mx-0">
           <h2 className=" text-center text-lg font-semibold mb-3">
             Review Location
           </h2>

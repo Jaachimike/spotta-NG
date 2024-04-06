@@ -118,14 +118,14 @@ const Reviews = () => {
     <div>
       {/* elements with sky blue background */}
       <div className="bg-[#F2F6FD]">
-        <div className="px-80 pb-4">
+        <div className="md:px-64 pb-4">
           {/* navbar */}
-          <div className=" flex justify-between items-center py-6 space-x-48">
+          <div className=" flex justify-between items-center py-6 space-x-48 mx-3 md:mx-0">
             {/* logo and input field */}
             <div className=" grow flex justify-between space-x-11">
               <img src={logo} alt="logo" />
               {/* input field */}
-              <div className="w-full">
+              <div className="w-full hidden md:block">
                 <form className="flex items-center  mx-auto">
                   <div className="relative w-full">
                     <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -149,7 +149,7 @@ const Reviews = () => {
               </div>
             </div>
             {/* profile */}
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3 ">
               <p className=" font-medium">Welcome!</p>
               <img src={profile} alt="" />
             </div>
@@ -159,8 +159,8 @@ const Reviews = () => {
             {/* header */}
             <div>
               {/* address and buttons */}
-              <div className="flex justify-between items-center mb-4">
-                <div>
+              <div className="flex flex-col md:flex-row justify-between items-center mb-4">
+                <div className="mx-3 md:mx-0 mb-5 md:mb-0">
                   <p className="text-2xl font-semibold">
                     Bonny and Clyde Street, Ajao Estate, Lagos
                   </p>
@@ -170,7 +170,7 @@ const Reviews = () => {
                   </p>
                 </div>
                 {/* buttons */}
-                <div className=" flex items-center space-x-3">
+                <div className=" flex items-center space-x-3 -ml-20 md:-ml-0">
                   <button
                     className="bg-[#3366FF] text-white px-7 py-2 rounded-md "
                     onClick={openModal}
@@ -186,11 +186,11 @@ const Reviews = () => {
                 </div>
               </div>
               {/* tags */}
-              <div className="flex space-x-3">
+              <div className="flex space-x-3 overflow-auto">
                 {tags.map((tag, index) => (
                   <button
                     key={index}
-                    className={`border flex items-center justify-center bg-white px-2 ${
+                    className={`border text-xs flex items-center justify-center bg-white px-2 ${
                       index === tags.length - 1 ? "rounded-full" : "rounded-md"
                     }`}
                   >
@@ -203,9 +203,9 @@ const Reviews = () => {
         </div>
       </div>
 
-      <div className="px-80 pt-12 flex justify-between">
+      <div className="md:px-64 pt-12 flex flex-col md:flex-row justify-between">
         {/* reviews */}
-        <div className="w-2/4 mr-7 grow">
+        <div className="w-3/4 mr-7 grow md:order-first order-last ml-10 md:ml-0 ">
           {submittedData.map((review, index) => (
             <div key={index} className=" border-b pb-5 mb-6">
               {/* profile, name, timestamp and review star  */}
@@ -224,7 +224,7 @@ const Reviews = () => {
                 </div>
               </div>
               {/* review */}
-              <div className="text-lg mb-2">
+              <div className=" mb-2">
                 <p>{review.review}</p>
               </div>
 
@@ -250,7 +250,7 @@ const Reviews = () => {
           ))}
         </div>
         {/* images */}
-        <div className="">
+        <div className="mx-5  md:mx-0 mb-5 md:mb-0">
           <img src={reviewImage} alt="" />
         </div>
       </div>
