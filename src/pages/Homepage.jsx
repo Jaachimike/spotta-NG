@@ -65,7 +65,7 @@ const Homepage = () => {
             </button>
           </div>
           {/* image */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <img src={comments} alt="" className="max-h-[90vh]" />
           </div>
         </div>
