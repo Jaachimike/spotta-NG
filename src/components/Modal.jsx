@@ -33,9 +33,13 @@ const Modal = ({ isOpen, onClose, onSubmit }) => {
   };
 
   return (
-    <div className={`fixed inset-0 bg-[#1D3045]/95 ${isOpen ? "" : "hidden"}`}>
-      <div className="flex items-center justify-center min-w-3xl min-h-screen">
-        <div className="bg-white p-8 rounded shadow-lg w-full max-w-3xl mx-3 md:mx-0">
+    <div
+      className={`fixed inset-0 overflow-y-auto bg-[#1D3045]/95 ${
+        isOpen ? "" : "hidden"
+      }`}
+    >
+      <div className="flex items-center justify-center min-w-3xl min-h-screen ">
+        <div className="bg-white p-8 rounded shadow-lg w-full max-w-3xl mx-3 md:mx-0 ">
           <h2 className=" text-center text-lg font-semibold mb-3">
             Review Location
           </h2>
@@ -112,7 +116,7 @@ const Modal = ({ isOpen, onClose, onSubmit }) => {
           <div className="flex justify-between">
             {/* submit button */}
             <button
-              className="bg-[#E4E9FB] w-full hover:bg-[#5378F6] text-white px-4 py-2 rounded mr-2"
+              className="xl:bg-[#E4E9FB] bg-[#5378F6] w-full hover:bg-[#5378F6] text-white px-4 py-2 rounded mr-2"
               onClick={handleSubmit}
             >
               SUBMIT

@@ -118,7 +118,7 @@ const Reviews = () => {
     <div>
       {/* elements with sky blue background */}
       <div className="bg-[#F2F6FD]">
-        <div className="md:px-64 pb-4">
+        <div className="xl:px-64 lg:px-16 md:px-8 pb-4">
           {/* navbar */}
           <div className=" flex justify-between items-center py-6 space-x-48 mx-3 md:mx-0">
             {/* logo and input field */}
@@ -190,7 +190,7 @@ const Reviews = () => {
                 {tags.map((tag, index) => (
                   <button
                     key={index}
-                    className={`border text-xs flex items-center justify-center bg-white px-2 ${
+                    className={`border text-xs flex items-center justify-center bg-white px-2 whitespace-nowrap ${
                       index === tags.length - 1 ? "rounded-full" : "rounded-md"
                     }`}
                   >
@@ -203,7 +203,7 @@ const Reviews = () => {
         </div>
       </div>
 
-      <div className="md:px-64 pt-12 flex flex-col md:flex-row justify-between">
+      <div className="xl:px-64 lg:px-16 md:px-8 pt-12 flex flex-col md:flex-row justify-between">
         {/* reviews */}
         <div className="w-3/4 mr-7 grow md:order-first order-last ml-10 md:ml-0 ">
           {submittedData.map((review, index) => (

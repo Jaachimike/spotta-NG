@@ -5,7 +5,7 @@ import comments from "../assets/png/Frame 5916.png";
 
 const Homepage = () => {
   return (
-    <div className="md:px-64">
+    <div className="2xl:mx-64 lg:mx-36 md:mx-20">
       <div>
         {/* navbar */}
         <div className=" flex justify-between items-center mt-6 mx-4 md:mx-0">
