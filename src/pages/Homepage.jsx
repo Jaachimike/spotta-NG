@@ -5,10 +5,10 @@ import comments from "../assets/png/Frame 5916.png";
 
 const Homepage = () => {
   return (
-    <div className="px-64">
+    <div className="md:px-64">
       <div>
         {/* navbar */}
-        <div className=" flex justify-between items-center mt-6">
+        <div className=" flex justify-between items-center mt-6 mx-4 md:mx-0">
           {/* logo */}
           <div>
             <img src={logo} alt="logo" />
@@ -22,11 +22,11 @@ const Homepage = () => {
         {/* body */}
         <div className="flex justify-between">
           {/* write-up */}
-          <div className="mt-80 max-w-xl">
-            <h1 className=" font-bold text-7xl mb-8">
+          <div className="mt-48 md:mt-64 max-w-lg mx-4 md:mx-0">
+            <h1 className=" font-bold text-5xl md:text-6xl mb-8">
               Find a place you <br /> will love to live!
             </h1>
-            <p className="text-xl mb-10">
+            <p className="md:text-xl mb-5 md:mb-10">
               See through the lenses of people who have lived or visited the
               neighbourhood you might have in mind.
             </p>
@@ -65,8 +65,8 @@ const Homepage = () => {
             </button>
           </div>
           {/* image */}
-          <div>
-            <img src={comments} alt="" />
+          <div className="hidden md:block">
+            <img src={comments} alt="" className="max-h-[90vh]" />
           </div>
         </div>
       </div>
